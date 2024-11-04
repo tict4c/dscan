@@ -78,9 +78,9 @@
             if(lastScan && lastScan[key]){
             change = count - lastScan[key]
             }
-            outputHTML += `<p ><strong style="font-size: x-large;">
+            outputHTML += `<p ><strong >
             <img class="" src="https://images.evetech.net/corporations/${key}/logo" alt="" height="32" width="32">
-            ${key}:</strong> ${count} change: +/- ${change}</p>`;
+            ${key}:</strong> <span padding style="font-size: x-large; padding-left: 5px;" >  ${count} </span> change: +/- ${change}</p>`;
         }
 
         // Set the inner HTML of the display div
