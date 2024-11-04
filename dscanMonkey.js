@@ -68,7 +68,10 @@
         displayDiv.style.backgroundColor = "#161d31";
         displayDiv.style.padding = "10px";
         displayDiv.style.border = "1px solid #ccc";
-        displayDiv.style.marginBottom = "10px";
+        displayDiv.style.marginBottom = "10px";        
+        displayDiv.style.position = "relative";        
+        displayDiv.style.width = "280px";
+        displayDiv.style.float = "left";
 
         // Format the output for display
         let outputHTML = "<h3>Faction Groups</h3>  Send ISK to Servanda";
@@ -80,7 +83,7 @@
             }
             outputHTML += `<p ><strong >
             <img class="" src="https://images.evetech.net/corporations/${key}/logo" alt="" height="32" width="32">
-            ${key}:</strong> <span padding style="font-size: x-large; padding-left: 5px;" >  ${count} </span> change: +/- ${change}</p>`;
+            </strong></p><p> <span padding style="font-size: x-large; padding-left: 5px;" >  ${count} </span> change: +/- ${change}</p>`;
         }
 
         // Set the inner HTML of the display div
