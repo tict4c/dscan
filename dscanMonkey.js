@@ -71,7 +71,7 @@
         displayDiv.style.marginBottom = "10px";
 
         // Format the output for display
-        let outputHTML = "<h3>Faction Groups</h3>";
+        let outputHTML = "<h3>Faction Groups</h3>  Send ISK to Servanda";
         outputHTML += `<p>Number of Groups: ${Object.keys(factionGroups).length}</p>`;
         for (const [key, count] of Object.entries(factionGroups)) {
             let change = 0;
