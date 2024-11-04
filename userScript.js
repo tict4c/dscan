@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Faction Grouper Remote Source
 // @namespace    http://tampermonkey.net/
-// @version      1.8
+// @version      1.9
 // @description  Group faction IDs and display them at the top of the page, checking every 5 seconds for the first 30 seconds
 // @author       Servanda
 // @match        https://scan.eveonline.it/*
