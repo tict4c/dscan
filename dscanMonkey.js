@@ -81,9 +81,15 @@
             if(lastScan && lastScan[key]){
             change = count - lastScan[key]
             }
+            let changeColor = '';
+            if (change > 0) {
+                changeColor = 'style="font-size: large;font-color:green;';               
+            } else if (change < 0) {
+                changeColor = 'style="font-size: large;font-color:red;';               
+            }
             outputHTML += `<p ><strong >
             <img class="" src="https://images.evetech.net/corporations/${key}/logo" alt="" height="32" width="32">
-            </strong></p><p> <span padding style="font-size: x-large; padding-left: 5px;" >  ${count} </span> change: +/- ${change}</p>`;
+            </strong></p><p> <span padding style="font-size: x-large; padding-left: 5px;" >  ${count} </span> change: <span ${changeColor}> ${change} </span></p>`;
         }
 
         // Set the inner HTML of the display div
