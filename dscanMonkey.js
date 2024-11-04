@@ -83,9 +83,9 @@
             }
             let changeColor = '';
             if (change > 0) {
-                changeColor = 'style="font-size: large; color:green;';               
+                changeColor = 'style="font-size: large; color:green;"';               
             } else if (change < 0) {
-                changeColor = 'style="font-size: large; color:red;';               
+                changeColor = 'style="font-size: large; color:red;"';               
             }
             outputHTML += `<p ><strong >
             <img class="" src="https://images.evetech.net/corporations/${key}/logo" alt="" height="32" width="32">
