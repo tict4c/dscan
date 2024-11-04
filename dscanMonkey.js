@@ -83,13 +83,13 @@
             }
             let changeColor = '';
             if (change > 0) {
-                changeColor = 'style="font-size: large;font-color:green;';               
+                changeColor = 'style="font-size: large; color:green;';               
             } else if (change < 0) {
-                changeColor = 'style="font-size: large;font-color:red;';               
+                changeColor = 'style="font-size: large; color:red;';               
             }
             outputHTML += `<p ><strong >
             <img class="" src="https://images.evetech.net/corporations/${key}/logo" alt="" height="32" width="32">
-            </strong></p><p> <span padding style="font-size: x-large; padding-left: 5px;" >  ${count} </span> change: <span ${changeColor}> ${change} </span></p>`;
+            </strong></p><p> <span padding style="font-size: x-large; padding-left: 5px;" >  ${count} </span> change: <span ${changeColor} > ${change} </span></p>`;
         }
 
         // Set the inner HTML of the display div
